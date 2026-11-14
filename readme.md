@@ -6,4 +6,8 @@ This project is with a sprite moving on ground and the goal is to figure out how
 
 This was by Paxton Neyenhouse, Liam Cubillo, and Kristopher Kopsaftis.
 
+Right Arrow for right
+Left Arrow for left
+Up arrow for jump
+
 Find on Itch at: https://cookieking652.itch.io/sugar-mayhem
