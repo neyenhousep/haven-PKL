@@ -4,8 +4,25 @@
 [ext_resource type="Texture2D" uid="uid://b7ym5ctiuyruf" path="res://pixel-art-single-grass-platform-game-floating-floating-pixel-style-png (2).webp" id="2_7hjo8"]
 [ext_resource type="PackedScene" uid="uid://6k8yu5clcxg3" path="res://node_2d.tscn" id="3_b1jma"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s5cd1"]
-size = Vector2(274, 73)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lip80"]
+radius = 22.0
+height = 272.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rr4xd"]
+radius = 22.0
+height = 272.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2vjpm"]
+radius = 22.0
+height = 272.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b1jma"]
+radius = 22.0
+height = 271.99997
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rtxbm"]
+radius = 22.0
+height = 272.0
 
 [node name="Map" type="Node2D" unique_id=1116776764]
 
@@ -30,7 +47,8 @@ texture = ExtResource("2_7hjo8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D" unique_id=1992082584]
 position = Vector2(-7, -93)
-shape = SubResource("RectangleShape2D_s5cd1")
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_lip80")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Node2 Ground" unique_id=2033085501]
 position = Vector2(920, 499)
@@ -44,7 +62,8 @@ texture = ExtResource("2_7hjo8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D2" unique_id=297369465]
 position = Vector2(-7, -93)
-shape = SubResource("RectangleShape2D_s5cd1")
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_rr4xd")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Node2 Ground" unique_id=1414605223]
 position = Vector2(763, 289)
@@ -58,7 +77,8 @@ texture = ExtResource("2_7hjo8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D3" unique_id=501878898]
 position = Vector2(-7, -93)
-shape = SubResource("RectangleShape2D_s5cd1")
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_2vjpm")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Node2 Ground" unique_id=1256623795]
 position = Vector2(337, 293)
@@ -71,8 +91,9 @@ texture = ExtResource("2_7hjo8")
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D4" unique_id=1274887782]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D4" unique_id=657306494]
-position = Vector2(-7, -93)
-shape = SubResource("RectangleShape2D_s5cd1")
+position = Vector2(-8, -91)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_b1jma")
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="Node2 Ground" unique_id=1836873698]
 position = Vector2(566, 501)
@@ -85,8 +106,9 @@ texture = ExtResource("2_7hjo8")
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D5" unique_id=584088686]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D5" unique_id=1142691948]
-position = Vector2(-7, -93)
-shape = SubResource("RectangleShape2D_s5cd1")
+position = Vector2(-7, -91)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_rtxbm")
 
 [node name="CharacterBody2D" parent="." unique_id=2023001309 instance=ExtResource("3_b1jma")]
 position = Vector2(396, 67)
