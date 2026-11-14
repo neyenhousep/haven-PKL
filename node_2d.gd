@@ -23,3 +23,11 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	const bounce_force = 900.0
+	for i in get_slide_collision_count():
+		var collision: KinematicCollision2D = get_slide_collision(i)
+		var collider: Object = collision.get_collider()
+		
+		if collider.get_parent().name == "RedOrb":
+			velocity = collision.get_normal() * bounce_force
+			break

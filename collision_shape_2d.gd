@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-extends CollisionBody2D
+extends CollisionShape2D
 @export var speed: float = 30
 
 func _physics_process(delta: float) -> void:
