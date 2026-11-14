@@ -1,4 +1,4 @@
-##Sugar Mayhem!
+## Sugar Mayhem!
 
 The use of AI in this project was very limited only used to make an object bounce on another.
 
