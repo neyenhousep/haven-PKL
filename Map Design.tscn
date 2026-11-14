@@ -118,16 +118,16 @@ shape = SubResource("CapsuleShape2D_rtxbm")
 position = Vector2(396, 67)
 scale = Vector2(0.5, 0.5)
 
-[node name="Node2" type="Node" parent="." unique_id=1146260450]
+[node name="Node2 to 24 is the red balls" type="Node" parent="." unique_id=1146260450]
 
-[node name="RedOrb" type="Sprite2D" parent="Node2" unique_id=836370507]
+[node name="RedOrb" type="Sprite2D" parent="Node2 to 24 is the red balls" unique_id=836370507]
 position = Vector2(56, 666)
 texture = ExtResource("4_rtxbm")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Node2/RedOrb" unique_id=276674390]
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2 to 24 is the red balls/RedOrb" unique_id=276674390]
 position = Vector2(-57, -641)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/RedOrb/StaticBody2D" unique_id=1789592638]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 to 24 is the red balls/RedOrb/StaticBody2D" unique_id=1789592638]
 position = Vector2(70, 650)
 shape = SubResource("CircleShape2D_fvmj5")
 
@@ -404,15 +404,15 @@ position = Vector2(-57, -641)
 position = Vector2(57, 643)
 shape = SubResource("CircleShape2D_fvmj5")
 
-[node name="Node24" type="Node" parent="." unique_id=1232557870]
+[node name="Node24 Last of the balls" type="Node" parent="." unique_id=1232557870]
 
-[node name="RedOrb" type="Sprite2D" parent="Node24" unique_id=59222730]
+[node name="RedOrb" type="Sprite2D" parent="Node24 Last of the balls" unique_id=59222730]
 position = Vector2(47, -177)
 texture = ExtResource("4_rtxbm")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Node24/RedOrb" unique_id=211782093]
+[node name="StaticBody2D" type="StaticBody2D" parent="Node24 Last of the balls/RedOrb" unique_id=211782093]
 position = Vector2(-57, -641)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node24/RedOrb/StaticBody2D" unique_id=284168748]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node24 Last of the balls/RedOrb/StaticBody2D" unique_id=284168748]
 position = Vector2(59, 641)
 shape = SubResource("CircleShape2D_fvmj5")
