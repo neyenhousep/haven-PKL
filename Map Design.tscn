@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dlje6mdb7jljm"]
+
+[ext_resource type="Texture2D" uid="uid://do4m11l1jvhsx" path="res://d6cfbh1-47931523-77f9-4ff2-b7c4-ea8083cdd544 (2).png" id="1_tmgkj"]
+
+[node name="Map" type="Node2D" unique_id=1116776764]
+
+[node name="Node" type="Node" parent="." unique_id=551020042]
+
+[node name="D6Cfbh14793152377f94Ff2B7c4Ea8083Cdd544(2)" type="Sprite2D" parent="." unique_id=1889321442]
+position = Vector2(583, 323)
+scale = Vector2(1.9266666, 1.645)
+texture = ExtResource("1_tmgkj")
