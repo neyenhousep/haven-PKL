@@ -1,8 +1,15 @@
 [gd_scene format=3 uid="uid://6k8yu5clcxg3"]
 
-[ext_resource type="Script" uid="uid://ilcunktjkqqf" path="res://bob.gd" id="1_wtcfe"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_xoljh"]
 
-[node name="Node2D" type="Node2D" unique_id=1069340519]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wuegv"]
+radius = 89.0
+height = 330.0
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=610083771]
-script = ExtResource("1_wtcfe")
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2023001309]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=78401023]
+sprite_frames = SubResource("SpriteFrames_xoljh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1582533878]
+shape = SubResource("CapsuleShape2D_wuegv")
