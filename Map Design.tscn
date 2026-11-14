@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://do4m11l1jvhsx" path="res://d6cfbh1-47931523-77f9-4ff2-b7c4-ea8083cdd544 (2).png" id="1_tmgkj"]
 [ext_resource type="Texture2D" uid="uid://b7ym5ctiuyruf" path="res://pixel-art-single-grass-platform-game-floating-floating-pixel-style-png (2).webp" id="2_7hjo8"]
 [ext_resource type="PackedScene" uid="uid://6k8yu5clcxg3" path="res://node_2d.tscn" id="3_b1jma"]
+[ext_resource type="Texture2D" uid="uid://325cea2qscxk" path="res://Red-Orb.webp" id="4_rtxbm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lip80"]
 radius = 22.0
@@ -23,6 +24,9 @@ height = 271.99997
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rtxbm"]
 radius = 22.0
 height = 272.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kjnkv"]
+radius = 69.065186
 
 [node name="Map" type="Node2D" unique_id=1116776764]
 
@@ -113,3 +117,15 @@ shape = SubResource("CapsuleShape2D_rtxbm")
 [node name="CharacterBody2D" parent="." unique_id=2023001309 instance=ExtResource("3_b1jma")]
 position = Vector2(396, 67)
 scale = Vector2(0.5, 0.5)
+
+[node name="Node2" type="Node" parent="." unique_id=1146260450]
+
+[node name="RedOrb" type="Sprite2D" parent="." unique_id=1263338550]
+position = Vector2(60, 629)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="RedOrb" unique_id=1199663021]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedOrb/StaticBody2D" unique_id=1074002843]
+position = Vector2(-2, 0)
+shape = SubResource("CircleShape2D_kjnkv")
