@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://do4m11l1jvhsx" path="res://d6cfbh1-47931523-77f9-4ff2-b7c4-ea8083cdd544 (2).png" id="1_tmgkj"]
 [ext_resource type="Texture2D" uid="uid://b7ym5ctiuyruf" path="res://pixel-art-single-grass-platform-game-floating-floating-pixel-style-png (2).webp" id="2_7hjo8"]
+[ext_resource type="PackedScene" uid="uid://6k8yu5clcxg3" path="res://node_2d.tscn" id="3_b1jma"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s5cd1"]
 size = Vector2(274, 73)
@@ -86,3 +87,7 @@ texture = ExtResource("2_7hjo8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D5" unique_id=1142691948]
 position = Vector2(-7, -93)
 shape = SubResource("RectangleShape2D_s5cd1")
+
+[node name="CharacterBody2D" parent="." unique_id=2023001309 instance=ExtResource("3_b1jma")]
+position = Vector2(396, 67)
+scale = Vector2(0.5, 0.5)
