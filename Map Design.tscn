@@ -7,11 +7,11 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lip80"]
 radius = 22.0
-height = 272.0
+height = 216.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rr4xd"]
 radius = 22.0
-height = 272.0
+height = 206.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2vjpm"]
 radius = 22.0
@@ -23,10 +23,10 @@ height = 271.99997
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rtxbm"]
 radius = 22.0
-height = 272.0
+height = 188.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fvmj5"]
-radius = 63.0
+radius = 62.968246
 
 [node name="Map" type="Node2D" unique_id=1116776764]
 
@@ -43,14 +43,14 @@ texture = ExtResource("1_tmgkj")
 position = Vector2(203, 503)
 
 [node name="Grass1" type="Sprite2D" parent="Node2 Ground/StaticBody2D" unique_id=1718935811]
-position = Vector2(-6, -89)
-scale = Vector2(0.73714286, 0.49142858)
+position = Vector2(35.999996, -89)
+scale = Vector2(0.49714288, 0.49142858)
 texture = ExtResource("2_7hjo8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D" unique_id=1537094987]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D" unique_id=1992082584]
-position = Vector2(-7, -93)
+position = Vector2(35, -93)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_lip80")
 
@@ -58,8 +58,8 @@ shape = SubResource("CapsuleShape2D_lip80")
 position = Vector2(920, 499)
 
 [node name="Grass2" type="Sprite2D" parent="Node2 Ground/StaticBody2D2" unique_id=363621260]
-position = Vector2(-6, -89)
-scale = Vector2(0.73714286, 0.49142858)
+position = Vector2(-13.5, -89)
+scale = Vector2(0.5514285, 0.49142858)
 texture = ExtResource("2_7hjo8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D2" unique_id=520535231]
@@ -80,7 +80,7 @@ texture = ExtResource("2_7hjo8")
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D3" unique_id=895685330]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D3" unique_id=501878898]
-position = Vector2(-7, -93)
+position = Vector2(-7, -82)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_2vjpm")
 
@@ -95,7 +95,7 @@ texture = ExtResource("2_7hjo8")
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D4" unique_id=1274887782]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D4" unique_id=657306494]
-position = Vector2(-8, -91)
+position = Vector2(-8, -84)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b1jma")
 
@@ -103,14 +103,14 @@ shape = SubResource("CapsuleShape2D_b1jma")
 position = Vector2(566, 501)
 
 [node name="Grass2" type="Sprite2D" parent="Node2 Ground/StaticBody2D5" unique_id=740894347]
-position = Vector2(-6, -89)
-scale = Vector2(0.73714286, 0.49142858)
+position = Vector2(31.999996, -89)
+scale = Vector2(0.52000004, 0.49142858)
 texture = ExtResource("2_7hjo8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D5" unique_id=584088686]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D5" unique_id=1142691948]
-position = Vector2(-7, -91)
+position = Vector2(38, -91)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_rtxbm")
 
@@ -121,12 +121,181 @@ scale = Vector2(0.5, 0.5)
 [node name="Node2" type="Node" parent="." unique_id=1146260450]
 
 [node name="RedOrb" type="Sprite2D" parent="Node2" unique_id=836370507]
-position = Vector2(57, 641)
+position = Vector2(56, 666)
 texture = ExtResource("4_rtxbm")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Node2/RedOrb" unique_id=276674390]
 position = Vector2(-57, -641)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/RedOrb/StaticBody2D" unique_id=1789592638]
-position = Vector2(56, 643)
+position = Vector2(70, 650)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node3" type="Node" parent="." unique_id=1407546928]
+
+[node name="RedOrb" type="Sprite2D" parent="Node3" unique_id=609838895]
+position = Vector2(178, 666)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node3/RedOrb" unique_id=808167646]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node3/RedOrb/StaticBody2D" unique_id=1947577303]
+position = Vector2(73, 647)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node4" type="Node" parent="." unique_id=915355447]
+
+[node name="RedOrb" type="Sprite2D" parent="Node4" unique_id=39831895]
+position = Vector2(308, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node4/RedOrb" unique_id=1119898783]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node4/RedOrb/StaticBody2D" unique_id=1471083636]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node5" type="Node" parent="." unique_id=1903950855]
+
+[node name="RedOrb" type="Sprite2D" parent="Node5" unique_id=1596769116]
+position = Vector2(436, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node5/RedOrb" unique_id=1082532260]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node5/RedOrb/StaticBody2D" unique_id=1083319243]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node6" type="Node" parent="." unique_id=1211733192]
+
+[node name="RedOrb" type="Sprite2D" parent="Node6" unique_id=55736060]
+position = Vector2(564, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node6/RedOrb" unique_id=351382903]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node6/RedOrb/StaticBody2D" unique_id=1844828829]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node7" type="Node" parent="." unique_id=1887954035]
+
+[node name="RedOrb" type="Sprite2D" parent="Node7" unique_id=1566325643]
+position = Vector2(692, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node7/RedOrb" unique_id=1323406462]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node7/RedOrb/StaticBody2D" unique_id=1775253658]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node8" type="Node" parent="." unique_id=1282099080]
+
+[node name="RedOrb" type="Sprite2D" parent="Node8" unique_id=1381351801]
+position = Vector2(812, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node8/RedOrb" unique_id=188619281]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node8/RedOrb/StaticBody2D" unique_id=1246920379]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node9" type="Node" parent="." unique_id=731248088]
+
+[node name="RedOrb" type="Sprite2D" parent="Node9" unique_id=252454433]
+position = Vector2(940, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node9/RedOrb" unique_id=378217330]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node9/RedOrb/StaticBody2D" unique_id=1896493620]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node10" type="Node" parent="." unique_id=2033891088]
+
+[node name="RedOrb" type="Sprite2D" parent="Node10" unique_id=197902149]
+position = Vector2(1076, 664)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node10/RedOrb" unique_id=2050869453]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node10/RedOrb/StaticBody2D" unique_id=1304110038]
+position = Vector2(76, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node11" type="Node" parent="." unique_id=1926741788]
+
+[node name="RedOrb" type="Sprite2D" parent="Node11" unique_id=724307832]
+position = Vector2(1172, 552)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node11/RedOrb" unique_id=815712324]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node11/RedOrb/StaticBody2D" unique_id=1198870526]
+position = Vector2(55, 640)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node12" type="Node" parent="." unique_id=1761188983]
+
+[node name="RedOrb" type="Sprite2D" parent="Node12" unique_id=538781161]
+position = Vector2(1177, 430)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node12/RedOrb" unique_id=905728271]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node12/RedOrb/StaticBody2D" unique_id=619854201]
+position = Vector2(54, 642)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node13" type="Node" parent="." unique_id=562179030]
+
+[node name="RedOrb" type="Sprite2D" parent="Node13" unique_id=506786696]
+position = Vector2(1177, 301)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node13/RedOrb" unique_id=2038124878]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node13/RedOrb/StaticBody2D" unique_id=2022746084]
+position = Vector2(47, 646)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node14" type="Node" parent="." unique_id=512794113]
+
+[node name="RedOrb" type="Sprite2D" parent="Node14" unique_id=2031236311]
+position = Vector2(1177, 189)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node14/RedOrb" unique_id=610722037]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node14/RedOrb/StaticBody2D" unique_id=1984370928]
+position = Vector2(50, 638)
+shape = SubResource("CircleShape2D_fvmj5")
+
+[node name="Node15" type="Node" parent="." unique_id=1348841762]
+
+[node name="RedOrb" type="Sprite2D" parent="Node15" unique_id=483386893]
+position = Vector2(1177, 61)
+texture = ExtResource("4_rtxbm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node15/RedOrb" unique_id=1460411191]
+position = Vector2(-57, -641)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node15/RedOrb/StaticBody2D" unique_id=1485710142]
+position = Vector2(48, 646)
 shape = SubResource("CircleShape2D_fvmj5")
