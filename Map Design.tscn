@@ -25,8 +25,8 @@ height = 271.99997
 radius = 22.0
 height = 272.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_kjnkv"]
-radius = 69.065186
+[sub_resource type="CircleShape2D" id="CircleShape2D_loh2j"]
+radius = 67.41662
 
 [node name="Map" type="Node2D" unique_id=1116776764]
 
@@ -124,8 +124,8 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(60, 629)
 texture = ExtResource("4_rtxbm")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="RedOrb" unique_id=1199663021]
+[node name="StaticBody2D" type="StaticBody2D" parent="RedOrb" unique_id=1166547282]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RedOrb/StaticBody2D" unique_id=1074002843]
-position = Vector2(-2, 0)
-shape = SubResource("CircleShape2D_kjnkv")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedOrb/StaticBody2D" unique_id=1252386209]
+position = Vector2(-2, 4)
+shape = SubResource("CircleShape2D_loh2j")
