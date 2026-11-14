@@ -100,7 +100,7 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b1jma")
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="Node2 Ground" unique_id=1836873698]
-position = Vector2(566, 501)
+position = Vector2(532, 505)
 
 [node name="Grass2" type="Sprite2D" parent="Node2 Ground/StaticBody2D5" unique_id=740894347]
 position = Vector2(31.999996, -89)
