@@ -106,13 +106,10 @@ texture = ExtResource("2_7hjo8")
 [node name="Sprite2D" type="Sprite2D" parent="Node2 Ground/StaticBody2D5" unique_id=584088686]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2 Ground/StaticBody2D5" unique_id=1142691948]
-position = Vector2(-7, -93)
-shape = SubResource("RectangleShape2D_s5cd1")
+position = Vector2(-7, -91)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_rtxbm")
 
-[node name="Node2" type="Node" parent="." unique_id=133804120]
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Node2" unique_id=1316719010]
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2/RigidBody2D" unique_id=662716212]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/RigidBody2D" unique_id=380965083]
+[node name="CharacterBody2D" parent="." unique_id=2023001309 instance=ExtResource("3_b1jma")]
+position = Vector2(396, 67)
+scale = Vector2(0.5, 0.5)
