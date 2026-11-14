@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://6k8yu5clcxg3"]
 
+[ext_resource type="Script" uid="uid://pijh12tmmcwf" path="res://node_2d.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://dd0bbdtcddbhm" path="res://Bob Static V1.png" id="1_wtcfe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xoljh"]
@@ -18,6 +19,7 @@ radius = 87.0
 height = 244.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=2023001309]
+script = ExtResource("1_0e48y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=78401023]
 position = Vector2(-123, 126.23206)
